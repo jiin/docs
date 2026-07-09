@@ -1,37 +1,94 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "UTRtek — Guida utente",
+  "description": "Manuale semplice per usare il pannello UTRtek: PIK Card, corsi, utenti e documenti.",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#D97706",
+    "light": "#F59E0B",
+    "dark": "#B45309"
   },
   "favicon": "/favicon.svg",
+  "seo": {
+    "metatags": {
+      "canonical": "https://docs.utrtek.com",
+      "description": "Guida utente UTRtek: come accedere, emettere PIK Card, gestire corsi e documenti medici.",
+      "og:title": "UTRtek — Guida utente",
+      "og:description": "Manuale passo passo per segreteria, istruttori e allievi UTRtek.",
+      "og:type": "website",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "UTRtek — Guida utente"
+    }
+  },
   "navigation": {
     "pages": [
       {
-        "group": "Getting Started",
+        "group": "Introduzione",
         "pages": [
           "index",
-          "quickstart"
+          "introduzione/cos-e-utrtek",
+          "introduzione/chi-lo-usa"
+        ]
+      },
+      {
+        "group": "Primi passi",
+        "pages": [
+          "primi-passi/accedere",
+          "primi-passi/completare-profilo",
+          "primi-passi/orientarsi-nel-pannello"
+        ]
+      },
+      {
+        "group": "Concetti base",
+        "pages": [
+          "concetti/pik-card",
+          "concetti/corsi",
+          "concetti/utenti-e-titoli",
+          "concetti/strutture-e-documenti"
+        ]
+      },
+      {
+        "group": "Il menu del pannello",
+        "pages": [
+          "menu/didattica-e-pik",
+          "menu/documenti-e-strutture",
+          "menu/anagrafica-e-gestione",
+          "menu/sistema"
+        ]
+      },
+      {
+        "group": "Guide passo passo",
+        "pages": [
+          "guide/creare-utente",
+          "guide/emettere-pik",
+          "guide/iscrizione-e-corso",
+          "guide/rinnovare-pik",
+          "guide/documenti-medici",
+          "guide/strutture-formative",
+          "guide/gestire-corsi"
+        ]
+      },
+      {
+        "group": "Ruoli e permessi",
+        "pages": [
+          "permessi/ruoli",
+          "permessi/permessi-dettaglio"
+        ]
+      },
+      {
+        "group": "Email e comunicazioni",
+        "pages": [
+          "email/template",
+          "email/storico-invii"
+        ]
+      },
+      {
+        "group": "Riferimenti",
+        "pages": [
+          "glossario"
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
@@ -40,14 +97,19 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Sito UTRtek",
+        "href": "https://www.utrtek.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Apri pannello",
+      "href": "https://www.utrtek.com/admin"
+    }
+  },
+  "footer": {
+    "socials": {
+      "website": "https://www.utrtek.com"
     }
   },
   "contextual": {
@@ -55,18 +117,7 @@
       "copy",
       "view",
       "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
+      "claude"
     ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
   }
 }

@@ -1,0 +1,58 @@
+---
+title: "Storico invii email"
+description: "Come consultare le email inviate dal sistema"
+---
+
+Ogni email che UTRtek invia viene **registrata** in uno storico consultabile dagli amministratori.
+
+## A cosa serve
+
+- Verificare se un utente ha ricevuto il **codice di accesso**
+- Controllare se è partita la mail di **scadenza PIK**
+- Risolvere contestazioni del tipo "non ho ricevuto nessuna email"
+- Controllare che le email automatiche funzionino correttamente
+
+## Come consultarlo
+
+<Steps>
+  <Step title="Apri lo storico">
+    Menu **Sistema → Storico invii email**.
+  </Step>
+
+  <Step title="Sfoglia l'elenco">
+    Vedi tutte le email inviate, ordinate per data (le più recenti in alto).
+  </Step>
+
+  <Step title="Usa i filtri">
+    Puoi filtrare per:
+    - **Destinatario** (indirizzo email)
+    - **Tipo di template** (es. solo "Codice accesso")
+    - **Data** (periodo specifico)
+  </Step>
+
+  <Step title="Apri un record">
+    Clicca su una riga per vedere i dettagli: destinatario, oggetto, template usato, data e ora di invio.
+  </Step>
+</Steps>
+
+## Informazioni registrate
+
+Per ogni email inviata, lo storico conserva:
+
+| Campo | Esempio |
+|-------|---------|
+| Destinatario | `mario.rossi@email.it` |
+| Oggetto | `Codice accesso pannello UTRtek` |
+| Template | `filament-login-otp` |
+| Data e ora | `09/07/2026 14:32` |
+| Tipo invio | Normale o test |
+
+## Cosa non puoi fare
+
+- **Non** puoi creare record manualmente
+- **Non** puoi cancellare email dallo storico
+- **Non** puoi reinviare un'email dallo storico (devi rifare l'operazione originale)
+
+<Note>
+  Se un utente non trova un'email, controlla prima lo storico. Se l'email risulta inviata, il problema potrebbe essere nella casella di posta dell'utente (spam, filtri, casella piena).
+</Note>

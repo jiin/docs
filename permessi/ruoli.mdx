@@ -1,0 +1,66 @@
+---
+title: "I ruoli"
+description: "I profili di accesso predefiniti nel sistema"
+---
+
+Ogni utente ha uno o più **ruoli** che determinano cosa può fare nel pannello UTRtek.
+
+## I quattro ruoli predefiniti
+
+### Amministratore (admin)
+
+Accesso **completo** a tutto il sistema. Non serve verificare i singoli permessi: l'admin può fare qualsiasi operazione.
+
+Chi lo usa: **segreteria UTRtek**, personale tecnico.
+
+---
+
+### Istruttore (instructor)
+
+Può gestire le **PIK dei propri allievi** e i propri documenti.
+
+| Può fare | Non può fare |
+|----------|--------------|
+| Accettare/rifiutare iscrizioni | Emettere PIK |
+| Aprire, sospendere, chiudere corsi | Creare utenti |
+| Vedere le PIK dei suoi allievi | Modificare il catalogo corsi |
+| Caricare i propri documenti medici | Gestire template email |
+
+---
+
+### Allievo (student)
+
+Vede e gestisce **solo i propri dati**.
+
+| Può fare | Non può fare |
+|----------|--------------|
+| Consultare le proprie PIK | Vedere PIK di altri |
+| Caricare certificato e assicurazione | Emettere o rinnovare PIK |
+| Scaricare la propria tessera | Gestire corsi |
+| Dichiarare licenze personali | Accedere all'anagrafica |
+
+---
+
+### Coordinatore nazionale (country_coordinator)
+
+Funzioni **simili all'istruttore**, con un ambito legato al proprio paese o area geografica.
+
+## Come si assegnano i ruoli
+
+1. Un amministratore apre la scheda utente
+2. Nella sezione **Ruoli**, seleziona il ruolo appropriato
+3. Salva
+
+Un utente può avere **più ruoli** contemporaneamente (es. istruttore e allievo).
+
+## Impersonificazione
+
+L'amministratore può **"entrare come"** un altro utente per assistenza:
+
+1. Dalla scheda utente, usa l'azione **Impersona**
+2. Il pannello mostra ciò che vedrebbe quell'utente
+3. Per tornare al proprio account, clicca **Torna all'admin** nel menu utente
+
+<Card title="Permessi nel dettaglio" icon="key" href="/permessi/permessi-dettaglio">
+  Elenco completo di tutti i permessi configurabili.
+</Card>

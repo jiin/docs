@@ -1,0 +1,74 @@
+---
+title: "I template email"
+description: "I 10 modelli di email automatiche del sistema"
+---
+
+UTRtek invia **email automatiche** in momenti precisi del ciclo di vita di PIK, corsi e utenti. Ogni email usa un **template** predefinito che gli amministratori possono personalizzare.
+
+## I 10 template
+
+| # | Nome | Quando viene inviata |
+|---|------|---------------------|
+| 1 | **Creazione PIK** | Quando viene emessa una nuova PIK Card |
+| 2 | **Richiesta iscrizione istruttore** | L'allievo chiede l'iscrizione a un corso |
+| 3 | **Conferma iscrizione istruttore** | L'istruttore accetta l'iscrizione |
+| 4 | **Rifiuto iscrizione istruttore** | L'istruttore rifiuta l'iscrizione |
+| 5 | **Apertura corso** | Il corso viene avviato |
+| 6 | **Chiusura corso** | Il corso viene terminato |
+| 7 | **PIK in scadenza** | Mancano 30 giorni o meno alla scadenza |
+| 8 | **PIK scaduto** | La PIK non è più valida |
+| 9 | **Corso sospeso** | Il corso viene messo in pausa |
+| 10 | **Creazione utente** | Viene creato un nuovo account |
+| 11 | **Codice accesso pannello** | Login con il codice OTP via email |
+
+## Come modificare un template
+
+<Steps>
+  <Step title="Apri i template">
+    Menu **Sistema → Template email**.
+  </Step>
+
+  <Step title="Seleziona il template">
+    Clicca sul template da modificare.
+  </Step>
+
+  <Step title="Modifica">
+    Puoi cambiare:
+    - **Oggetto** dell'email
+    - **Testo** del contenuto
+    - **Tema grafico** (colori, logo)
+  </Step>
+
+  <Step title="Salva">
+    Le modifiche si applicano alle **prossime** email inviate. Le email già inviate non cambiano.
+  </Step>
+</Steps>
+
+## I segnaposto automatici
+
+Nei template trovi dei **segnaposto** (testo tra `##`) che il sistema sostituisce automaticamente con i dati reali:
+
+| Segnaposto | Contenuto |
+|------------|-----------|
+| `##card.card_number##` | Numero della PIK |
+| `##card.course_name##` | Nome del corso |
+| `##card.instructor_full##` | Nome completo dell'istruttore |
+| `##card.admin_edit_url##` | Link diretto alla PIK nel pannello |
+
+Non modificare i segnaposto a meno che tu non sappia cosa stai facendo: se li rimuovi, l'email perderà informazioni importanti.
+
+<Tip>
+  Prima di modificare un template importante, fai un **invio di test** per verificare che l'email appaia correttamente.
+</Tip>
+
+## Chi riceve le email
+
+| Template | Destinatario tipico |
+|----------|---------------------|
+| Creazione PIK | Allievo o struttura acquirente |
+| Richiesta iscrizione | Istruttore assegnato |
+| Conferma / Rifiuto | Allievo e segreteria |
+| Apertura / Chiusura corso | Allievo |
+| PIK in scadenza / scaduto | Allievo e/o struttura |
+| Creazione utente | Nuovo utente |
+| Codice accesso | Chi sta facendo il login |

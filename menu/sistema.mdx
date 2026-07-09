@@ -1,0 +1,59 @@
+---
+title: "Sistema"
+description: "Template email e storico invii"
+---
+
+L'ultimo gruppo del menu è riservato alla **configurazione tecnica** delle comunicazioni. Lo usano principalmente gli **amministratori**.
+
+## Template email
+
+**Chi lo vede:** amministratori con permesso "Template email".
+
+**Cosa trovi:**
+- Elenco dei **10 modelli email** predefiniti del sistema
+- Per ogni template: nome, oggetto, anteprima del contenuto
+
+**Cosa puoi fare:**
+- Modificare il **testo** delle email
+- Cambiare l'**oggetto**
+- Personalizzare il **tema grafico** (colori, logo)
+
+I template usano **segnaposto automatici** che il sistema sostituisce con i dati reali. Esempi:
+
+| Segnaposto | Viene sostituito con |
+|------------|---------------------|
+| `##card.card_number##` | Numero della PIK |
+| `##card.course_name##` | Nome del corso |
+| `##card.instructor_full##` | Nome dell'istruttore |
+
+<Warning>
+  Modifica i template con attenzione. Un errore nel testo verrà inviato a tutti i destinatari. Fai sempre un **invio di test** prima di salvare modifiche importanti.
+</Warning>
+
+---
+
+## Storico invii email
+
+**Chi lo vede:** amministratori con permesso "Storico email".
+
+**Cosa trovi:**
+- Registro di **tutte le email** inviate dal sistema
+- Per ogni invio: destinatario, oggetto, tipo di template, data e ora
+
+**A cosa serve:**
+- Verificare se un utente ha ricevuto il codice di accesso
+- Controllare se è partita la mail di scadenza PIK
+- Risolvere contestazioni ("non ho ricevuto nulla")
+
+<Note>
+  Lo storico è **solo consultazione**. Non si possono creare o cancellare record manualmente.
+</Note>
+
+<CardGroup cols={2}>
+  <Card title="I template email" icon="envelope" href="/email/template">
+    Elenco completo dei 10 template.
+  </Card>
+  <Card title="Storico invii" icon="clock-rotate-left" href="/email/storico-invii">
+    Come consultare le email inviate.
+  </Card>
+</CardGroup>

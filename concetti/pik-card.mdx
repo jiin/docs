@@ -1,0 +1,70 @@
+---
+title: "Le PIK Card"
+description: "Cos'è una PIK Card e come funziona nel sistema"
+---
+
+La **PIK Card** (o semplicemente **PIK**) è il cuore del sistema UTRtek. È il "biglietto digitale" che permette a un allievo di seguire un corso.
+
+## Cos'è in pratica
+
+Pensa a una PIK Card come a un **tessera con un codice univoco** che collega insieme:
+
+- L'**allievo** che deve fare il corso
+- Il **corso** scelto (es. "Open Water Diver")
+- L'**istruttore** che lo seguirà
+- Eventualmente la **struttura formativa** che ha acquistato la PIK
+
+Ogni PIK ha un **numero univoco** (codice PIK) che la identifica nel sistema.
+
+## I due tipi di "stato"
+
+Ogni PIK ha **due stati diversi**. È importante capire la differenza.
+
+### Stato del corso (avanzamento didattico)
+
+Indica **a che punto è il percorso formativo**:
+
+| Stato | Significato |
+|-------|-------------|
+| **Creato** | La PIK è stata emessa, ma l'iscrizione non è ancora partita |
+| **Da confermare** | L'allievo ha chiesto l'iscrizione; l'istruttore deve accettare |
+| **Confermato** | L'istruttore ha accettato; si può aprire il corso |
+| **Aperto** | Il corso è in corso |
+| **Sospeso** | Il corso è in pausa temporanea |
+| **Concluso** | Il corso è terminato (promosso o non promosso) |
+
+### Stato operativo (validità della carta)
+
+Indica se la **carta è ancora valida**:
+
+| Stato | Significato |
+|-------|-------------|
+| **Attiva** | La PIK è valida e utilizzabile |
+| **Scaduta** | La data di scadenza è passata |
+| **Archiviata** | Non più in uso, ma conservata nello storico |
+| **Sostituita da rinnovo** | È stata rinnovata con una nuova PIK |
+
+## Cosa puoi fare con una PIK
+
+- **Consultare** i dati (allievo, corso, istruttore, date)
+- **Scaricare** l'immagine della tessera (fronte e retro)
+- **Scaricare** il certificato in formato A4 (PDF)
+- **Verificare** l'autenticità tramite un link pubblico (senza login)
+
+## Il ciclo di vita tipico
+
+```
+Emissione → Da confermare → Confermato → Aperto → Concluso
+                ↓
+            (se rifiutato: email di rifiuto)
+```
+
+Se il corso è **rinnovabile**, alla scadenza si può creare una **nuova PIK** con validità prolungata.
+
+## Collegamento con myutrtek.com
+
+Quando un corso viene **aperto**, l'allievo riceve (via email dalla segreteria) le credenziali per accedere a **myutrtek.com**, dove trova il materiale didattico del corso.
+
+<Card title="Come emettere una PIK" icon="plus" href="/guide/emettere-pik">
+  Guida passo passo per la segreteria.
+</Card>

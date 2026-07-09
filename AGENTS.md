@@ -1,33 +1,40 @@
-> **First-time setup**: Customize this file for your project. Prompt the user to customize this file for their project.
-> For Mintlify product knowledge (components, configuration, writing standards),
-> install the Mintlify skill: `npx skills add https://mintlify.com/docs`
+# Documentazione UTRtek
 
-# Documentation project instructions
+Sito di documentazione utente per il CMS UTRtek, costruito con [Mintlify](https://mintlify.com).
 
-## About this project
+## Contenuto
 
-- This is a documentation site built on [Mintlify](https://mintlify.com)
-- Pages are MDX files with YAML frontmatter
-- Configuration lives in `docs.json`
-- Use the Mintlify MCP server, `https://mcp.mintlify.com`, to edit content and settings via MCP
-- Use the Mintlify docs MCP server, `https://www.mintlify.com/docs/mcp`, to query information about using Mintlify via MCP
+Manuale in italiano per utenti non tecnici (segreteria, istruttori, allievi, amministratori). Copre:
 
-## Terminology
+- Introduzione e primi passi
+- Concetti base (PIK, corsi, utenti, documenti)
+- Navigazione del pannello Filament
+- Guide operative passo passo
+- Ruoli, permessi ed email
 
-{/* Add product-specific terms and preferred usage */}
-{/* Example: Use "workspace" not "project", "member" not "user" */}
+## Sviluppo locale
 
-## Style preferences
+```bash
+cd docs
+mint dev
+```
 
-{/* Add any project-specific style rules below */}
+Apri `http://localhost:3000` per l'anteprima.
 
-- Use active voice and second person ("you")
-- Keep sentences concise — one idea per sentence
-- Use sentence case for headings
-- Bold for UI elements: Click **Settings**
-- Code formatting for file names, commands, paths, and code references
+## Workspace
 
-## Content boundaries
+Il file `../utr.code-workspace` apre insieme il CMS (`cms`) e questa documentazione (`docs`).
 
-{/* Define what should and shouldn't be documented */}
-{/* Example: Don't document internal admin features */}
+## Terminologia
+
+- **UTRtek** — nome del prodotto e del pannello
+- **PIK Card** — carta didattica digitale
+- **CMS** — il repository `utrtek-brevetti` (applicazione Laravel/Filament)
+- **Pannello** — interfaccia admin su `/admin`
+
+## Stile
+
+- Italiano, tono semplice e diretto
+- Guide con componenti `<Steps>` di Mintlify
+- Seconda persona ("tu", "clicca", "vai")
+- Titoli in sentence case

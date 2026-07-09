@@ -1,0 +1,88 @@
+---
+title: "Permessi nel dettaglio"
+description: "Elenco di tutti i permessi e cosa abilitano"
+---
+
+Oltre ai ruoli predefiniti, UTRtek permette di assegnare **permessi granulari** a ciascun ruolo. Solo gli amministratori possono modificarli dalla sezione **Anagrafica e gestione → Ruoli**.
+
+## Come funziona
+
+1. Ogni **ruolo** ha un insieme di permessi
+2. Ogni **utente** eredita i permessi dei ruoli assegnati
+3. L'**amministratore** bypassa tutti i controlli (accesso totale)
+
+## Elenco permessi
+
+### Accesso
+
+| Permesso | Cosa abilita |
+|----------|--------------|
+| **Accesso pannello** | Entrare in `/admin`. Senza questo permesso, l'utente non può fare il login |
+
+### Allegati
+
+| Permesso | Cosa abilita |
+|----------|--------------|
+| **Allegati** | Caricare file e documenti nel sistema |
+
+### PIK Card
+
+| Permesso | Cosa abilita |
+|----------|--------------|
+| **PIK — Visualizza** | Vedere l'elenco completo di tutte le PIK (senza: si vedono solo le proprie) |
+| **PIK — Crea** | Emettere nuove PIK Card |
+| **PIK — Admin** | Gestione completa: tutte le azioni sulle PIK |
+
+### Corsi
+
+| Permesso | Cosa abilita |
+|----------|--------------|
+| **Corsi — Visualizza** | Consultare il catalogo corsi |
+| **Corsi — Aggiungi** | Creare nuovi corsi |
+| **Corsi — Admin** | Gestione completa dei corsi |
+
+### Sistema
+
+| Permesso | Cosa abilita |
+|----------|--------------|
+| **Utenti** | Gestire l'anagrafica utenti |
+| **Ruoli** | Gestire ruoli e permessi |
+| **Template email** | Modificare i modelli email |
+| **Storico email** | Consultare lo storico invii |
+
+### Strutture formative
+
+| Permesso | Cosa abilita |
+|----------|--------------|
+| **Strutture — Visualizza** | Vedere l'elenco strutture formative |
+| **Strutture — Gestisci** | Creare e modificare strutture |
+
+## Regole importanti
+
+<Warning>
+  **Senza "Accesso pannello"** l'utente non può entrare, anche se ha altri permessi assegnati.
+</Warning>
+
+- La voce menu **PIK Cards** è visibile a tutti gli utenti loggati, ma senza "PIK — Visualizza" si vedono solo le proprie PIK
+- I permessi si combinano: se un utente ha due ruoli, ottiene l'unione dei permessi di entrambi
+- Modificare i permessi di un ruolo influisce su **tutti** gli utenti con quel ruolo
+
+## Modificare i permessi di un ruolo
+
+<Steps>
+  <Step title="Apri Ruoli">
+    Menu **Anagrafica e gestione → Ruoli**.
+  </Step>
+
+  <Step title="Seleziona il ruolo">
+    Clicca sul ruolo da modificare (es. "Istruttore").
+  </Step>
+
+  <Step title="Modifica i permessi">
+    Spunta o togli i permessi desiderati.
+  </Step>
+
+  <Step title="Salva">
+    Le modifiche si applicano immediatamente a tutti gli utenti con quel ruolo.
+  </Step>
+</Steps>

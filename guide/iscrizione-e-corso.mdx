@@ -1,0 +1,110 @@
+---
+title: "Iscrizione, apertura e chiusura corso"
+description: "Il ciclo completo di un corso dalla richiesta alla conclusione"
+---
+
+Dopo l'emissione di una PIK, il corso segue un **percorso** con diversi passaggi. Questa guida copre tutto il ciclo.
+
+## Panoramica del ciclo
+
+```
+Emissione PIK → Da confermare → Confermato → Aperto → Concluso
+                     ↓
+               (se rifiutato)
+```
+
+---
+
+## Parte 1: Accettare o rifiutare l'iscrizione
+
+**Chi lo fa:** l'istruttore assegnato (o un amministratore).
+
+<Steps>
+  <Step title="Ricevi l'email">
+    L'istruttore riceve l'email **"Richiesta iscrizione istruttore"** con i dettagli della PIK.
+  </Step>
+
+  <Step title="Apri la PIK">
+    Nel pannello, vai in **Didattica e PIK → PIK Cards**, trova la PIK e aprila.
+  </Step>
+
+  <Step title="Accetta o rifiuta">
+    Usa l'azione **"Accetta o rifiuta corso"** (o simile).
+
+    - **Accetta** → la PIK passa a **"Confermato"** e parte l'email di conferma
+    - **Rifiuta** → parte l'email di rifiuto; per riprovare serve una nuova richiesta
+  </Step>
+</Steps>
+
+<Note>
+  L'amministratore può **confermare direttamente** senza passare dall'istruttore, se necessario.
+</Note>
+
+---
+
+## Parte 2: Aprire il corso
+
+**Chi lo fa:** istruttore o amministratore.
+
+<Steps>
+  <Step title="Apri la PIK confermata">
+    La PIK deve essere in stato **"Confermato"**.
+  </Step>
+
+  <Step title="Clicca Apri corso">
+    Usa l'azione **"Apri corso"**.
+
+    La PIK passa a **"Aperto"** e parte l'email **"Apertura corso"**.
+  </Step>
+
+  <Step title="Credenziali myutrtek.com">
+    Entro 24 ore l'allievo riceve (dalla segreteria) le credenziali per accedere a **myutrtek.com** e studiare il materiale.
+  </Step>
+</Steps>
+
+---
+
+## Parte 3: Sospendere e riprendere (opzionale)
+
+Se il corso deve essere messo in pausa:
+
+1. Azione **"Sospendi corso"** → stato **"Sospeso"** + email di notifica
+2. Quando si può riprendere: azione **"Riprendi corso"** → torna ad **"Aperto"**
+
+---
+
+## Parte 4: Chiudere il corso
+
+**Chi lo fa:** istruttore o amministratore.
+
+<Steps>
+  <Step title="Apri la PIK aperta">
+    La PIK deve essere in stato **"Aperto"** (o "Sospeso" se si riprende prima).
+  </Step>
+
+  <Step title="Clicca Chiudi corso">
+    Usa l'azione **"Chiudi corso"**.
+  </Step>
+
+  <Step title="Indica l'esito">
+    Scegli se l'allievo è stato **promosso** o **non promosso**.
+  </Step>
+
+  <Step title="Conferma">
+    La PIK passa a **"Concluso"** e parte l'email **"Chiusura corso"**.
+
+    Se il corso prevede titoli e l'allievo è promosso, il sistema li assegna **automaticamente**.
+  </Step>
+</Steps>
+
+## Riepilogo email automatiche
+
+| Momento | Email inviata |
+|---------|---------------|
+| Emissione PIK | Creazione PIK |
+| Richiesta iscrizione | Richiesta iscrizione istruttore |
+| Istruttore accetta | Conferma iscrizione |
+| Istruttore rifiuta | Rifiuto iscrizione |
+| Corso aperto | Apertura corso |
+| Corso sospeso | Corso sospeso |
+| Corso chiuso | Chiusura corso |

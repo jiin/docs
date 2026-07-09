@@ -1,55 +1,48 @@
-# Mintlify Starter Kit
+# UTRtek — Guida utente
 
-Use the starter kit to get your docs deployed and ready to customize.
+Documentazione in italiano per il pannello gestionale UTRtek (CMS Laravel/Filament).
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+Costruita con [Mintlify](https://mintlify.com).
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+## Contenuto
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
+- Introduzione e primi passi (login OTP, profilo)
+- Concetti base (PIK Card, corsi, utenti, documenti)
+- Navigazione del menu Filament
+- Guide operative passo passo
+- Ruoli, permessi ed email automatiche
+- Glossario
 
-## AI-assisted writing
-
-Set up your AI coding tool to work with Mintlify:
+## Sviluppo locale
 
 ```bash
-npx skills add https://mintlify.com/docs
-```
-
-This command installs Mintlify's documentation skill for your configured AI tools like Claude Code, Cursor, Windsurf, and others. The skill includes component reference, writing standards, and workflow guidance.
-
-See the [AI tools guides](/ai-tools) for tool-specific setup.
-
-## Development
-
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
-
-```
 npm i -g mint
-```
-
-Run the following command at the root of your documentation, where your `docs.json` is located:
-
-```
 mint dev
 ```
 
-View your local preview at `http://localhost:3000`.
+Apri `http://localhost:3000`.
 
-## Publishing changes
+## Validazione
 
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
+```bash
+mint validate
+mint broken-links
+```
 
-## Need help?
+## Deploy
 
-### Troubleshooting
+Vedi [DEPLOY.md](./DEPLOY.md) per la guida completa al deploy su Mintlify.
 
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
+In sintesi:
 
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
+1. Push su `main` del repository `jiin/docs`
+2. Collega il repo nel [dashboard Mintlify](https://dashboard.mintlify.com)
+3. Installa la GitHub App per deploy automatici
+4. (Opzionale) Configura `docs.utrtek.com` come dominio personalizzato
+
+## Workspace
+
+Il file `../utr.code-workspace` apre insieme:
+
+- **cms** — `utrtek-brevetti`
+- **docs** — questo repository
