@@ -42,6 +42,7 @@
         "group": "Concetti base",
         "pages": [
           "concetti/pik-card",
+          "concetti/ciclo-di-vita-pik",
           "concetti/corsi",
           "concetti/utenti-e-titoli",
           "concetti/strutture-e-documenti"
